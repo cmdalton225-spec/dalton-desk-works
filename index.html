@@ -56,6 +56,17 @@
     background: var(--accent-soft); border-radius: 6px; padding: 16px 12px; text-align: center;
     font-size: 1.05rem; margin: 0 0 8px;
   }
+  .taste { background: var(--card); border: 2px solid var(--accent); border-radius: 10px; padding: 20px 22px; }
+  .taste h2 { margin-top: 0; }
+  .taste ul { margin: 8px 0; padding-left: 18px; }
+  .taste p { margin: 0 0 8px; }
+  .sampletag { font-size: .72rem; letter-spacing: 1.5px; text-transform: uppercase; color: var(--accent); margin: 0 0 10px; }
+  .pins { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; margin: 0 0 8px; }
+  .pins figure { margin: 0; }
+  .pins img { width: 100%; border-radius: 6px; display: block; border: 1px solid var(--line); }
+  .pins figcaption { font-size: .78rem; margin-top: 5px; }
+  .pins figcaption strong { display: block; font-size: .82rem; margin-bottom: 2px; }
+  a.dl { display: inline-block; margin: 0 0 6px; font-size: .95rem; }
   .step .n { font-size: 1.6rem; color: var(--accent); font-weight: bold; }
   .step p { margin: 6px 0 0; font-size: .97rem; }
   .strip {
@@ -98,33 +109,58 @@
   </header>
   <div class="rule"></div>
 
-  <h2 id="samples">The work, before and after</h2>
-  <p class="sub">Real sample work, made for our own products — the format and standard your order is delivered in.</p>
+  <div class="taste">
+    <h2>Start with a free taste</h2>
+    <p>Not ready to buy a package? See the work on your own product first — free, and yours to keep either way. Pick one:</p>
+    <ul>
+      <li><strong>One Etsy listing rewritten</strong> — title, full tag set, and description.</li>
+      <li><strong>A small section of a spreadsheet cleaned</strong> — one tab, or the first chunk of a messy file.</li>
+      <li><strong>One Pinterest pin designed</strong> — graphic, title, and description for one of your products.</li>
+    </ul>
+    <p>Email the listing link, the file, or the product link to <a href="mailto:matt@daltondeskworks.com">matt@daltondeskworks.com</a> and say which taste you'd like. No shop login is needed or ever asked for — everything works from links and files you send.</p>
+    <p style="margin-bottom:0">Nothing is published anywhere without your written permission. Free tastes are limited to a small number of spots each month.</p>
+  </div>
+
+  <h2 id="samples">Judge the work, not the promises</h2>
+  <p class="sub">Every demo below is a sample made for our own products — the format and standard your order is delivered in. No client work is shown, and there are no performance numbers to take on faith.</p>
   <div class="samples">
 
     <div class="sample">
       <h3>Before &amp; After: Etsy Title + 13-Tag Rewrite</h3>
+      <p class="sampletag">Sample — made for our own products</p>
       <div class="ba before"><span class="lbl">Before</span>“Budget Planner Printable, Cute Budget Binder, Money Organizer, Budgeting, Planner” — 6 of 13 tag slots used, “budget” repeated four times.</div>
       <div class="ba after"><span class="lbl">After</span>“Paycheck Budget Planner Printable | Biweekly Budget Binder with Bill Tracker, Savings Goals &amp; Spending Log | A4 and US Letter PDF” — all 13 tags filled, each a different buyer phrase.</div>
       <p>The description was rewritten to open with the buyer's problem and name exactly what's included.</p>
     </div>
 
     <div class="sample">
-      <h3>Example Deliverable: Custom Budget Tracker</h3>
-      <table>
-        <tr><th>Category</th><th class="num">Planned</th><th class="num">Left</th></tr>
-        <tr><td>Groceries &amp; household</td><td class="num">$250.00</td><td class="num">$158.19</td></tr>
-        <tr><td>Fuel</td><td class="num">$200.00</td><td class="num">$85.18</td></tr>
-        <tr><td>Bills due this period</td><td class="num">$187.54</td><td class="num">$97.54</td></tr>
-      </table>
-      <p>Working formulas throughout — nothing typed twice. Cleanup orders arrive the same way: your file, cleaned, with a change log of every fix.</p>
+      <h3>Before &amp; After: Spreadsheet Cleanup</h3>
+      <p class="sampletag">Sample — made for our own products</p>
+      <p>The same expense log, before and after. Download both files and compare them yourself:</p>
+      <p><a class="dl" href="samples/sample-messy.xlsx">↓ The messy original (.xlsx)</a><br>
+      <a class="dl" href="samples/sample-cleaned.xlsx">↓ The cleaned file (.xlsx)</a></p>
+      <p>What was fixed: two duplicate rows and a blank row removed; four different date styles turned into real dates; category names typed three different ways merged into one; amounts stored as text converted to numbers; a totals formula that only counted some of the rows replaced with one that counts them all; a “Left” column added, calculated per row. The cleaned file carries a change-log tab listing every fix — the same log your cleanup order arrives with.</p>
     </div>
 
     <div class="sample">
-      <h3>Example Deliverable: Pinterest Pin + SEO Copy</h3>
-      <div class="pinimg">“Payday Comes. The Money Goes. Where?”</div>
-      <p><strong>Title:</strong> Paycheck Budget Planner Printable — Plan Every Payday in One Sitting</p>
-      <p><strong>Description:</strong> written around the phrases buyers search, with the board and destination link decided for every pin.</p>
+      <h3>Sample Campaign: 3 Pins, One Product</h3>
+      <p class="sampletag">Sample — made for our own products</p>
+      <p>One product, three pins — each aimed at a different search, each with its board and destination link decided. Click a pin to see it full-size.</p>
+      <div class="pins">
+        <figure>
+          <a href="samples/pin1-paycheck.jpg"><img src="samples/pin1-paycheck.jpg" alt="Pin: Budget by Paycheck, Not by Month"></a>
+          <figcaption><strong>Budget by Paycheck, Not by Month | Biweekly Budget Planner Bundle</strong>Monthly budgets fail people who get paid every week or two. This paycheck budget planner is built around your payday — printable planner, fillable phone edition, companion app, and a Safe-to-Spend calculator. Instant download on Etsy.</figcaption>
+        </figure>
+        <figure>
+          <a href="samples/pin2-safe-to-spend.jpg"><img src="samples/pin2-safe-to-spend.jpg" alt="Pin: Know Your Safe-to-Spend Number"></a>
+          <figcaption><strong>The Safe-to-Spend Number: The Only Budget Math You Need</strong>Paycheck minus bills due before the next check minus a small set-aside = your Safe-to-Spend number. One honest number beats a complicated budget — this planner walks you through it in 5 minutes per payday.</figcaption>
+        </figure>
+        <figure>
+          <a href="samples/pin3-split-rent.jpg"><img src="samples/pin3-split-rent.jpg" alt="Pin: Paid Biweekly? Split Your Rent in Two"></a>
+          <figcaption><strong>Paid Biweekly? Split Your Rent Across Both Paychecks</strong>Stop letting one paycheck take the whole rent hit. A paycheck budget planner maps every bill to the check that covers it and splits the big ones — half from each. Instant download.</figcaption>
+        </figure>
+      </div>
+      <p>Every pin pack is delivered this way: finished pin files plus a copy sheet with every title and description.</p>
     </div>
 
   </div>
